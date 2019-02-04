@@ -57,10 +57,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_ergodox(
         // left hand
         KC_NO,          KC_1,     KC_2,   KC_3,   KC_4,          KC_5,           KC_ESC,
-        KC_TILD,        KC_QUOTE, KC_COMM,KC_DOT, KC_P,          KC_Y,           KC_LBRACKET,
+        KC_GRV,        KC_QUOTE, KC_COMM,KC_DOT, KC_P,          KC_Y,           KC_LBRACKET,
         KC_TAB,         KC_A,     KC_O,   KC_E,   SFT_T(KC_U),   LT(AUX, KC_I),
         SFT_T(KC_LBRC), KC_SCLN,  KC_Q,   KC_J,   KC_K,          KC_X,           KC_LGUI,
-        KC_NO,          KC_NO,    KC_NO,  KC_NO,  MO(AUX),
+        LGUI(KC_X),          LGUI(KC_C),    LGUI(KC_V),  SCMD(KC_R),  LGUI(KC_TAB),
                                                            KC_HOME, KC_END,
                                                                     KC_PGUP,
                                       CTL_T(KC_BSPC), ALT_T(KC_DEL), KC_PGDN,
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [AUX] = LAYOUT_ergodox(
        // left hand
-       KC_VOLU, KC_NO, KC_NO,  KC_NO,  KC_NO,  KC_NO,   KC_SLEP,
+       KC_VOLU, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_PREV_TRACK,  KC_MEDIA_NEXT_TRACK,  KC_NO,  KC_NO,   KC_SLEP,
        KC_VOLD, KC_F1, KC_F2,  KC_F3,  KC_F4,  KC_NO,   KC_NO,
        KC_NO  , KC_F5, KC_F6,  KC_F7,  KC_F8,  KC_TRNS,
        KC_TRNS, KC_F9, KC_F10, KC_F11, KC_F12, KC_NO,   KC_NO,
